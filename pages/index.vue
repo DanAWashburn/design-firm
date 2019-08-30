@@ -10,24 +10,23 @@
 
 <script>
 export default {
-  head () {
+  head() {
     return {
       title: this.title,
-      meta: [
-        { hid: 'design firm architects', name: 'home of design firm architects', content: 'Example projects of modern architecture' }
-      ]
+      meta: [{
+        hid: 'design firm architects',
+        name: 'home of design firm architects',
+        content: 'Example projects of modern architecture'
+      }]
     }
   }
 }
 </script>
 
 <style lang="scss">
-
 .sample {
-  padding: 0px;
-  border: 2px solid black;
-  margin: 15px;
+    padding: 0;
+    border: 2px solid black;
+    margin: 15px;
 }
-
-
 </style>

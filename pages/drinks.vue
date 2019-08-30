@@ -1,46 +1,44 @@
 <template>
-  <div class="wrapper">
-    <div class="container">
-      <!--Why aren't the below centering?-->
-      <h2 class="heading">Cocktails that Begin with "A"</h2>
-      <h3 class="heading">"Architecture" isn't the only good thing that begins with "a."</h3>
+<div class="wrapper">
+  <div class="container">
+    <!--Why aren't the below centering?-->
+    <div class="subheading">
+      <h2 class="heading">"Architecture" isn't the only good thing that begins with "a."</h2>
     </div>
-    <section class="zone">
-        <cocktail
-          v-for="drink in info"
-          :key="drink.id"
-          :drink="drink"
-        />
-    </section>
   </div>
+  <section class="zone">
+    <cocktail v-for="drink in info" :key="drink.id" :drink="drink" />
+  </section>
+</div>
 </template>
 
 <script>
 import axios from 'axios';
 import Cocktail from '~/components/Cocktail.vue';
-//DO THIS
 
 export default {
   components: {
     Cocktail
   },
-  data () {
+  data() {
     return {
       info: null,
       loading: true,
       errored: false
     }
   },
-  head () {
+  head() {
     return {
       title: this.title,
-      meta: [
-  { hid: 'design firm architects and drinks', name: 'drinnks from design firm', content: 'Some wonderful things that begin with "A".' }
-      ]
+      meta: [{
+        hid: 'design firm architects and drinks',
+        name: 'drinnks from design firm',
+        content: 'Some wonderful things that begin with "A".'
+      }]
     }
   },
 
-  mounted () {
+  mounted() {
     axios
       .get('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
       .then(response => (this.info = response.data.drinks))
