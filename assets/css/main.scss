@@ -2,8 +2,8 @@
 @import 'node_modules/bootstrap-vue/src/index.scss';
 @import url('https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap');
 $darkgrey: #555555;
-$title: 'Electrolize', sans-serif;
-$standard: 'Farro', sans-serif;
+$title: 'Electrolize', Monaco, monospace;
+$standard: 'Farro', Geneva, sans-serif;
 
 h1 {
   font-size: 500%;
