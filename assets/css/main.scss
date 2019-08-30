@@ -1,0 +1,87 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap');
+
+$darkgrey: #555555;
+$title: 'Electrolize', sans-serif;
+$standard: 'Farro', sans-serif;
+
+h1 {
+    font-size: 500%;
+    font-family: $title;
+    color: $darkgrey;
+}
+
+h2 {
+    font-family: $standard;
+    color: $darkgrey;
+    font-size: 150%;
+}
+
+h3 {
+    font-family: $standard;
+    color: $darkgrey;
+    font-size: 150%;
+}
+
+h5 {
+    font-family: $standard;
+    color: $darkgrey;
+    font-size: 150%;
+}
+p {
+    font-family: $standard;
+
+    color: $darkgrey;
+}
+//n-link styling not working. Why?
+.nav-link:link {
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+}
+
+.nav-link {
+    color: $darkgrey;
+}
+
+.flex-item-standard {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item2 {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    justify-content: space-around;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.headshot {
+  filter: grayscale(100%);
+  width: 150px;
+}
+
+.designer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  font-style: italic;
+}
