@@ -13,7 +13,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap' }
     ]
   },
   /*
@@ -47,12 +46,19 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    'nuxt-webfontloader'
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Electrolize:400,700', 'Farro:400,700'] //Loads Lato font with weights 400 and 700
+    }
   },
   /*
   ** Build configuration
