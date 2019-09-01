@@ -1,11 +1,5 @@
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap');
 
-h1 {
-  font-size: 500%;
-  font-family: $title;
-  color: $darkgrey;
-}
 </style>
 
 <template>
